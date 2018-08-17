@@ -1,7 +1,7 @@
 title: Consortium for Open Research Data in the Humanities
 email: info@cordh.net
 description: digital research infrastructures for the Humanities
-baseurl: "/cordh" # the subpath of your site, e.g. /blog
+baseurl: "/cordh-website" # the subpath of your site, e.g. /blog
 url: "https://www.cordh.net" # the base hostname & protocol for your site, e.g. http://example.com
 facebook_username: xxx
 twitter_username: cordhum
