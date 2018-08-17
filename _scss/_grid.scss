@@ -1,0 +1,38 @@
+.columns {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	.column {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		flex-basis: 100%;
+		flex-grow: 1;
+		flex-shrink: 1;
+		overflow: hidden;
+
+		@include breakpoint(m) {
+			flex-basis: 0;
+			padding: 1rem;
+		}
+
+		&.one-third {
+			flex-basis: 100%;
+
+			@include breakpoint(m) {
+				flex-basis: 33.33%;
+			}
+		}
+
+		&.two-thirds {
+			flex-basis: 100%;
+
+			@include breakpoint(m) {
+				flex-basis: 66.67%;
+			}
+		}
+	}
+}

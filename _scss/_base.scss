@@ -1,0 +1,107 @@
+// Colors
+$dark: #000000;
+$dark-grey: #474747;
+$red-text: #b50000;
+$red-bg: #8d1a15;
+$light-link: #e7e9e6;
+
+
+// Base
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: #ffffff;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 1rem;
+	max-width: 1280px;
+}
+
+.button,
+.button-alt {
+	margin-top: 1.5rem;
+	padding: .5rem 2rem;
+	background: transparent;
+	border: 2px solid $light-link;
+	color: $light-link;
+	font-size: 1rem;
+	font-family: 'Roboto Condensed';
+	letter-spacing: .5px;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all 300ms ease-out;
+	cursor: pointer;
+	outline: none;
+	box-shadow: none;
+
+	&:hover {
+		background: $light-link;
+		border-color: transparent;
+		color: $red-text;
+	}
+}
+
+.button {
+	color: $red-text;
+	border-color: $red-text;
+
+	&:hover {
+		background: $red-text;
+		color: $light-link;
+	}
+}
+
+@-webkit-keyframes pulse{
+	0%,to {
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+		filter: alpha(opacity=40);
+		opacity: .4;
+		bottom: 2rem;
+	}
+	50%{
+		-ms-filter: none;
+		-webkit-filter: none;
+		filter: none;
+		opacity: 1;
+		bottom: calc(2rem + 10px)
+	}
+}
+@keyframes pulse{
+	0%,to {
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+		filter: alpha(opacity=40);
+		opacity: .4;
+		bottom: 2rem;
+	}
+	50%{
+		-ms-filter: none;
+		-webkit-filter: none;
+		filter: none;
+		opacity: 1;
+		bottom: calc(2rem + 10px);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

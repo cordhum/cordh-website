@@ -1,0 +1,85 @@
+.main-footer {
+	padding: 2rem 0 3rem 0;
+	background: $red-bg;
+	color: $light-link;
+	font-family: 'Roboto Condensed';
+	font-weight: 300;
+	font-size: 1rem;
+
+	.widget-title {
+		margin-top: 0;
+		margin-bottom: 1rem;
+		font-family: 'Roboto Condensed';
+		font-size: 1.25rem;
+		font-weight: 500;
+	}
+
+	ul {
+		padding: 0;
+		margin: 0;
+
+		li {
+			display: block;
+			margin-bottom: 4px;
+			list-style-type: none;
+		}
+	}
+
+	a {
+		color: $light-link;
+		text-decoration: none;
+		transition: all 300ms ease-out;
+
+		&:hover {
+			color: darken($light-link, 10%);
+		}
+	}
+
+	.social {
+		li {
+			display: inline-block;
+			margin-right: .25rem;
+
+			a {
+				font-size: 1.5rem;
+			}
+		}
+	}
+
+	p {
+		margin-top: 0;
+	}
+
+	.contact-form {
+		.columns { align-items: initial; }
+		.column {
+			flex-direction: column;
+			justify-content: space-between;
+			padding: 0 2rem 0 0;
+
+			input {
+				display: block;
+				padding: .5rem 1rem;
+				margin-bottom: 1.5rem;
+				font-size: 1rem;
+				font-family: 'Roboto Condensed';
+
+				&:last-of-type { margin-bottom: 0; }
+			}
+
+			textarea {
+				display: block;
+				padding: .5rem 1rem;
+				width: 100%;
+				font-size: 1rem;
+				font-family: 'Roboto Condensed';
+			}
+		}
+	}
+}
+
+footer .copyright {
+	text-align: center;
+	font-family: 'Roboto Condensed';
+	letter-spacing: .5px;
+}

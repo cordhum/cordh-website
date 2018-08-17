@@ -1,0 +1,106 @@
+---
+layout: default-news
+---
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+	<head>
+		<!-- Meta -->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+		<!-- Social: Twitter -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@{{site.twitter_username}}">
+		<meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {{ site.username }}{% else %}{{ site.title }}{% endif %}">
+		<meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+		{% if page.hero %}
+		<meta property="twitter:image:src" content="{{ page.hero }}">
+		{% else %}
+		<meta property="twitter:image:src" content="{{ "/assets/img/blog-image.png" | prepend: site.baseurl | prepend: site.url }}">
+		{% endif %}
+
+		<!-- Social: Facebook / Open Graph -->
+		<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+		<meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.username }}{% else %}{{ site.title }}{% endif %}">
+		{% if page.image %}
+		<meta property="og:image" content="{{ page.hero }}">
+		{% else %}
+		<meta property="og:image" content="{{ "/assets/img/blog-image.png" | prepend: site.baseurl | prepend: site.url }}">
+		{% endif %}
+		<meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+		<meta property="og:site_name" content="{{ site.title }}">
+
+		<!-- Social: Google+ / Schema.org  -->
+		<meta itemprop="name" content="{% if page.title %}{{ page.title }} | {{ site.username }}{% else %}{{ site.title }}{% endif %}"/>
+		<meta itemprop="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+		<meta itemprop="image" content="{{ "/assets/img/blog-image.png" | prepend: site.baseurl | prepend: site.url }}"/>
+		
+		<!-- Style -->
+		<link rel="stylesheet" href="{{ "/assets/css/dactl.css" | prepend: site.baseurl }}">
+		<link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+		<link rel="shortcut icon" href="{{ "/assets/images/favicon.png" | prepend: site.baseurl }}" type="image/x-icon" />
+		<link rel="shortcut icon" href="{{ "/assets/images/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,600|Montserrat:300,400,600|Merriweather:300,400,600" rel="stylesheet">
+		<!-- Title -->
+		<title>{{ site.title }}</title>
+	</head>
+
+	<body class="body-news">
+		{% include header.html %}
+		{{ content }}
+
+		<footer>
+			<div class="main-footer" id="contact">
+				<div class="container">
+					<div class="columns">
+						<div class="column one-third">
+							<h4 class="widget-title">CORDh</h4>
+							<div class="widget-content">
+								<p>
+									<a href="#">Rome</a> <br>
+									<a href="#">Florence</a> <br>
+									<a href="#">Zurich</a> <br>
+									<a href="#">Berlin</a> <br>
+								</p>
+								<ul class="social">
+									<li><a href="https://facebook.com/" target="_blank"><span class="fab fa-facebook-square"></span></a></li>
+									<li><a href="https://twitter.com/" target="_blank"><span class="fab fa-twitter-square"></span></a></li>
+									<li><a href="https://linkedin.com/" target="_blank"><span class="fab fa-linkedin"></span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="column two-thirds">
+							<h4 class="widget-title">Get in Touch</h4>
+							<div class="widget-content">
+								<form action="https://formspree.io/info@cordh.net" method="POST" class="contact-form">
+									<div class="columns">
+										<div class="column one-third">
+											<input type="text" name="name" placeholder="Name">
+											<input type="email" name="_replyto" placeholder="Email Address">
+											<input type="text" name="_subject" placeholder="Subject">
+										</div>
+										<div class="column two-thirds">
+											<textarea name="message" placeholder="Message" rows="5"></textarea>
+											<div class="button-container">
+												<button type="submit" class="button-alt">Send Message</button>
+											</div>								
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>&copy; 2018 President and Fellows of Harvard College</p>
+			</div>
+		</footer>
+		<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="{{ "assets/js/dactl.js" | relative_url }}"></script>
+	</body>
+</html>
+

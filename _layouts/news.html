@@ -1,0 +1,16 @@
+---
+layout: default-news
+format: blog-index
+---
+<main class="news">
+	<div class="wrapper">
+		{% for post in paginator.posts %}
+
+		{% include news.html %}
+
+		{% endfor %}
+
+		{% include post/pagination.html %}
+	</div>	
+</main>
+

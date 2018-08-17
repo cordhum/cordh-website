@@ -1,0 +1,20 @@
+---
+layout: main
+---
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+	{% include head.html %}
+	<body class="body-home">
+		<div class="hero" id="particles-js">
+			{% include header.html %}
+			<div class="hero-image">
+				<img src="assets/images/hero-image.svg">
+			</div>
+			<img src="assets/images/arrow.svg" id="arrow">
+		</div>
+		{{ content }}
+		{% include footer.html %}
+	</body>
+</html>
+

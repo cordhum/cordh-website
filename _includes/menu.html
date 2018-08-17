@@ -1,0 +1,8 @@
+<nav class="main-nav">
+	<ul class="menu">
+		{% for link in site.links %}
+			<li><a data-scroll href="{{ site.url }}{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></li>
+		{% endfor %}
+		<li class="docs"><a href="#">Docs</a></li>
+	</ul>
+</nav>
