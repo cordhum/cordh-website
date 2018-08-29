@@ -19,7 +19,7 @@
 			height: auto;
 
 			@include breakpoint(m) {
-				left: -80px;
+				
 				width: 80px;
 			}
 
@@ -33,7 +33,7 @@
 			text-transform: lowercase;
 
 			@include breakpoint(m) {
-				margin-left: 0;
+				padding-left: 3rem;
 			}
 		}
 
