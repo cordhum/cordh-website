@@ -20,8 +20,6 @@ future: true
 links:
   - title: Partners
     url: '#partners'
-  - title: News
-    url: /news/
   - title: Contact
     url: '#contact'
 
