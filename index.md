@@ -16,12 +16,13 @@ layout: main
 				<div class="column info-widget">
 					<span class="fas fa-sitemap"></span>
 					<h2>Integration</h2>
-					<p>The consortium aims to contribute to a vibrant culture of open scholarship and collaboration among researchers, disrupting barriers posed by proprietary databases where information is kept in silos.</p>
+					<p>We seek to advance the global paradigm shift in publishing models, away from inward looking, closed and costly strategies, towards an open and inclusive model that encourages collaboration and open-access.</p>
+					
 				</div>
 				<div class="column info-widget">
 					<span class="fas fa-lock-open"></span>
 					<h2>Open</h2>
-					<p>We seek to advance the global paradigm shift in publishing models, away from inward looking, closed and costly strategies, towards an open and inclusive model that encourages collaboration and open-access.</p>
+					<p>The consortium aims to contribute to a vibrant culture of open scholarship and collaboration among researchers, disrupting barriers posed by proprietary databases where information is kept in silos.</p>
 				</div>
 			</div>
 		</section>
