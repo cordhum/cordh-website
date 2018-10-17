@@ -4,15 +4,24 @@ layout: main
 <main class="home">
 	<div class="container">
 		<section class="home-section" id="info">
+			
+			<!-- removing this for now
 			<div class="section-title">
 				<h1>{Distributed} <br>Digital Research <br>Infrastructures <br>for the Humanities</h1>
 			</div>
+			-->
+			
 			<div class="columns">
+				
+				
 				<div class="column info-widget">
 					<span class="fas fa-code-branch"></span>
 					<h2>Harmonization</h2>
 					<p>The Consortium for Open Research Data in the Humanities is committed to harmonizing data standards and infrastructures to facilitate interoperability and the cross-pollination of research data.</p>
 				</div>
+				
+				
+				
 				<div class="column info-widget">
 					<span class="fas fa-sitemap"></span>
 					<h2>Integration</h2>
