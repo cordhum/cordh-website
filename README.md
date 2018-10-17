@@ -1,8 +1,8 @@
-# cordh-website
+# CORDh website
 
 
 
-#gem install bundler
-#bundle install
+#gem install bundler<br />
+#bundle install <br />
 #jekyll serve
 
