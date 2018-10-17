@@ -40,6 +40,7 @@ layout: main
 				<h1>Partners</h1>
 				<!-- <p>We seek to advance the global paradigm shift in publishing models, away from inward looking, closed and costly strategies, towards an open and inclusive model that encourages collaboration and open-access.</p> -->
 			</div>
+			<br />
 			<div id="partners-list">
 				<div class="partner"><img src="assets/images/bibliotheca-hertziana.svg" alt="Bibliotheca Hertziana"></div>
 				<div class="partner"><img src="assets/images/villa-i-tatti.svg" alt="Villa I Tatti"></div>
@@ -87,6 +88,7 @@ layout: main
 			<!--		<p>We seek to advance the global paradigm shift in publishing models, away from inward looking, closed and costly strategies, towards an open and inclusive model that encourages collaboration and open-access.</p>
 -->
 			</div>
+			<br />
 			<div id="collab-list">
 				<div class="partner"><img src="assets/images/crm.svg" alt="CRM"></div>
 				<div class="partner"><img src="assets/images/researchspace.svg" alt="ResearchSpace"></div> 
