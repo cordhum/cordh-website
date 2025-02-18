@@ -48,6 +48,7 @@ layout: main
 				<div class="partner"><img src="assets/images/max-planck.svg" alt="Max Planck Institute for the History of Science"></div>
 				<div class="partner"><img src="assets/images/eth-zurich.svg" alt="ETH Zurich"></div>
 				<div class="partner"><img src="assets/images/CensusLogo.jpg" alt="Census of Antique Works of Art and Architecture Known in the Reinassance"></div>
+    				<div class="partner"><img src="assets/images/KHI-rot-neu.png" alt="Kunsthistorisches Institut in Florenz"></div>
 			</div>
 		</section>
 		<!--
